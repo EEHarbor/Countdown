@@ -1,0 +1,27 @@
+The EE2 Countdown plug-in allows you to insert a simple countdown to a specified date into your templates.
+  
+==REQUIRED PARAMETERS==
+	day="[1..31]"
+	The day of the month you are counting down to.
+  
+	month="[1..12]"
+	The month number that you are counting down to.  Ex:  1 for January, 2 February, etc.
+  
+	year="[2004...]"
+	The year, any above 2004 should work.
+  
+==OPTIONAL PARAMETERS==
+	hours="[0...24]"
+	The hour your event begins on, in 24 hour format.  24 is midnight, 12 is noon, etc.
+	
+==SINGLE VARIABLES==
+	{days} Days left
+	{hours} Hours left
+  
+===POSSIBLE EXAMPLES===
+
+	{exp:countdown day="25" month="12" year="2012"}
+	Christmas next year is in {days} days.
+	{/exp:countdown}
+	
+	
