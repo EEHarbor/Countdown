@@ -34,9 +34,6 @@ class Countdown
 			'hours' => $hours_left
 		);
 
-        var_dump($variables);
-        var_dump($difference);
-
 		$this->return_data = ee()->TMPL->parse_variables(ee()->TMPL->tagdata, $variables);
         return $this->return_data;
     }
